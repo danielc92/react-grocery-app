@@ -10,7 +10,7 @@ export default class GroceryList extends Component {
             {
                 
                 this.props.data.map(item => {
-                    return <GroceryDetail key={item.item_id} item={item}
+                    return <GroceryDetail deleteGrocery={this.props.deleteGrocery} key={item.id} item={item}
                     />
                 })
                
