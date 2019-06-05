@@ -3,9 +3,10 @@ import React, { Component } from 'react'
 export default class GroceryDetail extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
+
                 
-            </div>
+            </React.Fragment>
         )
     }
 }
