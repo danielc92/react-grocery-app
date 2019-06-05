@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom';
 import GroceryList from './GroceryList';
-
+import Hero from './Hero';
 
 export default class App extends Component {
   
@@ -12,7 +12,8 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* Header/NavBar */}
+        {/* Hero */}
+        <Hero/>
 
         {/* Grocery List */}
         <GroceryList data={this.state.groceries}/>
