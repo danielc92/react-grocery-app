@@ -6,7 +6,7 @@ export default class GroceryDetail extends Component {
         if (item) {
             return item
         } else {
-            return `${item_desc} does not exist.`
+            return `${item_desc} data doe not exist for this grocery...`
         }
     }
 
@@ -17,9 +17,10 @@ export default class GroceryDetail extends Component {
         <div className="notification">
             <div className="content">
                 <h5 className="title">{this.props.item.item_name}</h5>
-                <p>Brand: {this.props.item.brand_name}</p>
-                <p className="help has-text-success">{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredient')}</p>
+                <p className="tag is-small is-warning">{this.props.item.brand_name}</p>
+                <p className="help has-text-link">{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredients')}</p>
                 <p className="has-text-grey help">Last updated: {this.props.item.updated_at}</p>
+                <a className="button is-outlined is-danger is-small">Delete</a>
             </div>
         </div>
     </article>

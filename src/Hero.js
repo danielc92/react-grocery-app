@@ -4,35 +4,35 @@ export default class Hero extends Component {
     render() {
         return (
             <React.Fragment>
-                    <section class="hero is-info is-medium">
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
+                    <section className="hero is-info is-medium">
+  <div className="hero-head">
+    <nav className="navbar">
+      <div className="container">
+        <div className="navbar-brand">
+          <a className="navbar-item">
             <strong>GROCERY APP</strong>
           </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+          <span className="navbar-burger burger" data-target="navbarMenuHeroB">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroB" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
+        <div id="navbarMenuHeroB" className="navbar-menu">
+          <div className="navbar-end">
+            <a className="navbar-item is-active">
               Home
             </a>
-            <a class="navbar-item">
+            <a className="navbar-item">
               About
             </a>
-            <a class="navbar-item">
+            <a className="navbar-item">
               Contact
             </a>
-            <span class="navbar-item">
-              <a class="button is-info is-inverted">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
+            <span className="navbar-item">
+              <a className="button is-info is-inverted">
+                <span className="icon">
+                  <i className="fab fa-github"></i>
                 </span>
                 <span>Download</span>
               </a>
@@ -43,12 +43,12 @@ export default class Hero extends Component {
     </nav>
   </div>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">
+  <div className="hero-body">
+    <div className="container has-text-centered">
+      <p className="title">
         Title
       </p>
-      <p class="subtitle">
+      <p className="subtitle">
         Subtitle
       </p>
     </div>
