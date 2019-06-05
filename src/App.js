@@ -12,7 +12,12 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
+        {/* Header/NavBar */}
 
+        {/* Grocery List */}
+        <GroceryList data={this.state.groceries}/>
+
+        {/* Footer */}
                 
       </React.Fragment>
     )
