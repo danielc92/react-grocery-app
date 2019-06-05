@@ -6,7 +6,21 @@ export default class GroceryDetail extends Component {
         if (item) {
             return item
         } else {
-            return `${item_desc} data doe not exist for this grocery...`
+            return `${item_desc} data does not exist for this grocery...`
+        }
+    }
+
+    checkStyle = (item) => {
+        if (item) {
+            return {
+                color: '#209cee',
+                fontSize: '0.7rem'
+            }
+        } else {
+            return {
+                color: 'grey',
+                fontSize: '0.7rem'
+            }
         }
     }
 
@@ -18,9 +32,9 @@ export default class GroceryDetail extends Component {
             <div className="content">
                 <h5 className="title">{this.props.item.item_name}</h5>
                 <p className="tag is-small is-warning">{this.props.item.brand_name}</p>
-                <p className="help has-text-link">{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredients')}</p>
+                <p style={this.checkStyle(this.props.item.nf_ingredient_statement)}>{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredients')}</p>
                 <p className="has-text-grey help">Last updated: {this.props.item.updated_at}</p>
-                <a className="button is-outlined is-danger is-small">Delete</a>
+                <a onClick={this.props.deleteGrocery(this, this.props.item.item_id)} className="button is-outlined is-danger is-small">Delete</a>
             </div>
         </div>
     </article>
