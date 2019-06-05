@@ -24,10 +24,10 @@ export default class Hero extends Component {
               Home
             </a>
             <a class="navbar-item">
-              Examples
+              About
             </a>
             <a class="navbar-item">
-              Documentation
+              Contact
             </a>
             <span class="navbar-item">
               <a class="button is-info is-inverted">
