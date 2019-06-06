@@ -8,7 +8,9 @@ export default class GroceryList extends Component {
             <section className="section">
             <section className="container">
 
-            <h6 className="title">Grocery List</h6>
+            <div className="content">
+                <h3>Grocery List</h3>
+            </div>
             <div className="columns is-multiline">
             {
                 
