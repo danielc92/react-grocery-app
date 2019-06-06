@@ -27,7 +27,7 @@ export default class GroceryDetail extends Component {
     render() {
         return (
 <React.Fragment>
-    <article className="column is-one-third-fullhd is-one-third-desktop is-full-touch is-full-mobile">
+    <article className="column is-one-quarter">
         <div className="notification">
             <div className="content">
                 <img src={'./images/' + this.props.item.image_name}></img>

@@ -264,11 +264,23 @@ export default class App extends Component {
     this.setState({groceries: [...this.state.groceries.filter(item => item.uuid !== id)] })
   }
 
+
+  modifyStock = (uuid, increment) => {
+    this.setState({groceries: this.state.groceries.map(grocery => {
+        if (uuid === grocery.uuid) {
+            grocery.stock = grocery.stock + increment
+        }
+        return grocery;
+        })
+    });
+  }
+
+
   addGrocery = (e) => {
     
     e.preventDefault();
 
-    let timestamp = new Date().toJSON()
+    let timestamp = new Date().toJSON();
     let new_grocery = {
       id: uuid.v4(),
       nf_ingredient_statement:  e.target.ingredients.value,
@@ -297,7 +309,7 @@ export default class App extends Component {
               <GroceryForm addGrocery={this.addGrocery} />
 
               {/* Grocery List */}
-              <GroceryList deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
+              <GroceryList modifyStock={this.modifyStock} deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
               </React.Fragment>
           )}/>
 
