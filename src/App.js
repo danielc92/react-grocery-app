@@ -3,6 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 import GroceryList from './GroceryList';
 import Hero from './Hero';
 import Footer from './Footer';
+import GroceryForm from './GroceryForm';
 export default class App extends Component {
   
   state = {
@@ -35,8 +36,11 @@ export default class App extends Component {
         {/* Hero */}
         <Hero/>
 
+        {/* Grocery Form */}
+        <GroceryForm addGrocery={this.addGrocery} />
+
         {/* Grocery List */}
-        <GroceryList addGrocery={this.addGrocery} deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
+        <GroceryList deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
 
         {/* Footer */}
         <Footer/>
