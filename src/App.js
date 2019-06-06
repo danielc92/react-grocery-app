@@ -268,7 +268,12 @@ export default class App extends Component {
   modifyStock = (uuid, increment) => {
     this.setState({groceries: this.state.groceries.map(grocery => {
         if (uuid === grocery.uuid) {
-            grocery.stock = grocery.stock + increment
+            let new_value = grocery.stock + increment;
+            if (new_value >= 0) {
+                grocery.stock = new_value;
+            } else {
+                alert('No more stock available, you cannot purchase this item');
+            }
         }
         return grocery;
         })
