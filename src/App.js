@@ -14,19 +14,23 @@ export default class App extends Component {
     this.setState({groceries: [...this.state.groceries.filter(item => item.id !== id)] })
   }
 
-  addGrocery = () => {
+  addGrocery = (e) => {
+    
+    e.preventDefault();
+
     let timestamp = new Date().toJSON()
     let new_grocery = {
-      id:Math.random()*9999999999999999,
-      nf_ingredient_statement: 'Some list of ingredients',
+      id: Math.max(this.state.groceries.map(item => {return item.id})) + 1,
+      nf_ingredient_statement:  e.target.ingredients.value,
       updated_at: timestamp,
-      brand_name: 'Item Brand'
+      item_name: e.target.name.value,
+      brand_name: e.target.brand.value
 
     }
 
     this.setState({groceries: [...this.state.groceries, new_grocery]});
 
-    console.log('Added a new grocery~');
+    alert(`You've successfully added a new grocery ${e.target.name.value}`);
 
   }
 
