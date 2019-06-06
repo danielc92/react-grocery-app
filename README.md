@@ -1,4 +1,4 @@
-# Project Title
+# React Grocery App
 Grocery app built in React and deployed to gh-pages.
 
 # Before you get started
