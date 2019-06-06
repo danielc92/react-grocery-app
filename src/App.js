@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-// import {HashRouter as Router, Route} from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import GroceryList from './GroceryList';
 import Hero from './Hero';
 import Footer from './Footer';
 import GroceryForm from './GroceryForm';
+import About from './About';
+
+
+
 export default class App extends Component {
   
   state = {
@@ -36,19 +40,27 @@ export default class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        {/* Hero */}
-        <Hero/>
+      <Router>
+        <React.Fragment>
+          {/* Hero */}
+          <Hero/>
 
-        {/* Grocery Form */}
-        <GroceryForm addGrocery={this.addGrocery} />
+          <Route exact path="/" render={props => (
+            <React.Fragment>
+              {/* Grocery Form */}
+              <GroceryForm addGrocery={this.addGrocery} />
 
-        {/* Grocery List */}
-        <GroceryList deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
+              {/* Grocery List */}
+              <GroceryList deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
+              </React.Fragment>
+          )}/>
 
-        {/* Footer */}
-        <Footer/>
-      </React.Fragment>
+          <Route exact path="/about" component={About}/>
+          
+          {/* Footer */}
+          <Footer/>
+        </React.Fragment>
+      </Router>
     )
   }
 }

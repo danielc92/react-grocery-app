@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom';
 
 export default class Hero extends Component {
     render() {
@@ -20,21 +21,14 @@ export default class Hero extends Component {
         </div>
         <div id="navbarMenuHeroB" className="navbar-menu">
           <div className="navbar-end">
-            <a href="http://localhost:3000" className="navbar-item is-active">
-              Home
-            </a>
-            <a href="http://localhost:3000" className="navbar-item">
-              About
-            </a>
-            <a href="http://localhost:3000" className="navbar-item">
-              Contact
-            </a>
+            <Link to="/" className="navbar-item">Home</Link>
+            <Link to="/about" className="navbar-item">About</Link>
             <span className="navbar-item">
-              <a href="http://localhost:3000" className="button is-info is-inverted">
+              <a href="https://github.com/danielc92/react-grocery-app" className="button is-info is-inverted">
                 <span className="icon">
                   <i className="fab fa-github"></i>
                 </span>
-                <span>Download</span>
+                <span>Source Code</span>
               </a>
             </span>
           </div>
