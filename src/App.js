@@ -5,7 +5,7 @@ import Hero from './Hero';
 import Footer from './Footer';
 import GroceryForm from './GroceryForm';
 import About from './About';
-import {uuid} from 'uuid';
+import uuid from 'uuid';
 
 
 
@@ -287,11 +287,12 @@ export default class App extends Component {
 
     let timestamp = new Date().toJSON();
     let new_grocery = {
-      id: uuid.v4(),
-      nf_ingredient_statement:  e.target.ingredients.value,
-      updated_at: timestamp,
-      item_name: e.target.name.value,
-      brand_name: e.target.brand.value
+      uuid: uuid.v4(),
+      description:  e.target.description.value,
+      last_updated: timestamp,
+      name: e.target.name.value,
+      category: e.target.category.value,
+      stock: 0
 
     }
 
