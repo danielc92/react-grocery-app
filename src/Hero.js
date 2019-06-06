@@ -10,9 +10,7 @@ export default class Hero extends Component {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <a href="http://localhost:3000" className="navbar-item">
-            <strong>GROCERY APP</strong>
-          </a>
+        <Link to="/" className="navbar-item"><strong>GROCERY APP</strong></Link>
           <span className="navbar-burger burger" data-target="navbarMenuHeroB">
             <span></span>
             <span></span>
