@@ -3,7 +3,7 @@ Grocery app built in React and deployed to gh-pages.
 
 Boilerplate code was created with `create-react-app`
 
-# Before you get started
+# Concepts Covered
 - Creating and working with boiler plate React code with create-react-app
 - Creating and referencing React.Components
 - Dynamic routing with react-router-dom
