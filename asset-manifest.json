@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/react-grocery-app/static/js/main.f205854a.chunk.js",
+    "main.js.map": "/react-grocery-app/static/js/main.f205854a.chunk.js.map",
+    "runtime~main.js": "/react-grocery-app/static/js/runtime~main.29c2264e.js",
+    "runtime~main.js.map": "/react-grocery-app/static/js/runtime~main.29c2264e.js.map",
+    "static/js/2.0d32d620.chunk.js": "/react-grocery-app/static/js/2.0d32d620.chunk.js",
+    "static/js/2.0d32d620.chunk.js.map": "/react-grocery-app/static/js/2.0d32d620.chunk.js.map",
+    "index.html": "/react-grocery-app/index.html",
+    "precache-manifest.2dce0e51e7fd49231bf1ecb7f3f8dcfa.js": "/react-grocery-app/precache-manifest.2dce0e51e7fd49231bf1ecb7f3f8dcfa.js",
+    "service-worker.js": "/react-grocery-app/service-worker.js"
+  }
+}
