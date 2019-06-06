@@ -21,11 +21,11 @@ export default class GroceryForm extends Component {
                     <label style={this.labelStyle} className="label">Name</label>
                     <input placeholder="Enter grocery name here" required className="input" name="name"/>
                     
-                    <label style={this.labelStyle} className="label">Brand</label>
-                    <input placeholder="Enter brand name here" required className="input" name="brand"/>
+                    <label style={this.labelStyle} className="label">Category</label>
+                    <input placeholder="Enter category name here" required className="input" name="brand"/>
                     
-                    <label style={this.labelStyle} className="label">Ingredients</label>
-                    <textarea placeholder="Enter list of ingredients here" required className="textarea" name="ingredients"></textarea>
+                    <label style={this.labelStyle} className="label">Description</label>
+                    <textarea required placeholder="Enter item description here" className="textarea" name="description"></textarea>
                     <button type="submit" className="button is-outlined is-link">Add grocery</button>
                 </form>
                 </section>

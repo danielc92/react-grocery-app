@@ -27,13 +27,15 @@ export default class GroceryDetail extends Component {
     render() {
         return (
 <React.Fragment>
-    <article className="column is-one-third-fullhd is-one-third-desktop is-one-half">
+    <article className="column is-one-third-fullhd is-one-third-desktop is-full-touch is-full-mobile">
         <div className="notification">
             <div className="content">
-                <h5 className="title">{this.props.item.item_name}</h5>
-                <p className="tag is-small is-warning">{this.props.item.brand_name}</p>
-                <p style={this.checkStyle(this.props.item.nf_ingredient_statement)}>{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredients')}</p>
-                <p className="has-text-grey help">Last updated: {this.props.item.updated_at}</p>
+                <img src={'./images/' + this.props.item.image_name}></img>
+                <h5 className="title">{this.props.item.name}</h5>
+                <p className="tag is-small is-warning">{this.props.item.category}</p>
+                <p style={this.checkStyle(this.props.item.description)}>{this.checkItemExists(this.props.item.description, 'Description')}</p>
+                <p className="has-text-grey help">Last updated: {this.props.item.last_updated}</p>
+                <p className="help has-text-link">uuid: {this.props.item.uuid}</p>
                 <button onClick={this.props.deleteGrocery.bind(this, this.props.item.uuid)} className="button is-outlined is-danger is-small">Delete</button>
             </div>
         </div>
