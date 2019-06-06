@@ -24,8 +24,8 @@ export default class GroceryForm extends Component {
                             <label style={this.labelStyle} className="label">Brand</label>
                             <input placeholder="Enter brand name here..." required className="input" name="brand"></input>
                             <label style={this.labelStyle} className="label">Ingredients</label>
-                            <textarea placeholder="Enter list of ingredients here..." required className="textarea" name="ingredients"></textarea>
-                            <button  style={{margin: '1rem 0rem'}} type="submit" className="button is-outlined is-link">Add grocery</button>
+                            <label placeholder="Enter list of ingredients here..." required className="textarea" name="ingredients"></textarea>
+                            <button style={{margin: '1rem 0rem'}} type="submit" className="button is-outlined is-link">Add grocery</button>
                     </form>
                 </section>
             </section>
