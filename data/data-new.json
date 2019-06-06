@@ -1,5 +1,68 @@
-[
+[{
+        "name": "Donut",
+        "category": "Bakery",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "donut-1761520_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
+        "name": "Tic Tacs",
+        "category": "Confectionary",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "tic-tacs-1420767_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
+        "name": "Lollypop",
+        "category": "Confectionary",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "lollys-50738_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
+        "name": "Lettuce",
+        "category": "Vegetables",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "salad-1710328_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
+        "name": "Carrot",
+        "category": "Vegetables",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "carrots-673184_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
+        "name": "Beetroot",
+        "category": "Vegetables",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "beetroot-687251_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },
     {
+        "name": "Basil",
+        "category": "Vegetables",
+        "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
+        "image_name": "donut-1761520_640.jpg",
+        "image_source": "Pixabay",
+        "uuid": "398f30ac-8b0c-40da-a04a-2dd9a0e6544d",
+        "stock": 65,
+        "last_updated":"2019-06-06T04:46:16.540Z"
+    },{
         "name": "Olive Oil",
         "category": "Oils",
         "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
