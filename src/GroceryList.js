@@ -6,6 +6,9 @@ export default class GroceryList extends Component {
         return (
             <React.Fragment>
             <section className="section">
+            <section className="container">
+
+            <h6 className="title">Grocery List</h6>
             <div className="columns is-multiline">
             {
                 
@@ -16,6 +19,7 @@ export default class GroceryList extends Component {
                
             }
             </div>
+            </section>
             </section>
             </React.Fragment>
         )

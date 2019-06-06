@@ -13,6 +13,22 @@ export default class App extends Component {
     this.setState({groceries: [...this.state.groceries.filter(item => item.id !== id)] })
   }
 
+  addGrocery = () => {
+    let timestamp = new Date().toJSON()
+    let new_grocery = {
+      id:Math.random()*9999999999999999,
+      nf_ingredient_statement: 'Some list of ingredients',
+      updated_at: timestamp,
+      brand_name: 'Item Brand'
+
+    }
+
+    this.setState({groceries: [...this.state.groceries, new_grocery]});
+
+    console.log('Added a new grocery~');
+
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -20,7 +36,7 @@ export default class App extends Component {
         <Hero/>
 
         {/* Grocery List */}
-        <GroceryList deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
+        <GroceryList addGrocery={this.addGrocery} deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
 
         {/* Footer */}
         <Footer/>
