@@ -46,15 +46,13 @@ export default class Hero extends Component {
   <div className="hero-body">
     <div className="container has-text-centered">
       <p className="title">
-        Title
+        React Grocery App
       </p>
       <p className="subtitle">
-        Subtitle
+        Developed by Daniel Corcoran.
       </p>
     </div>
   </div>
-
-
 </section>
 
             </React.Fragment>
