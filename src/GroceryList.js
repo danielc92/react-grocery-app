@@ -15,7 +15,7 @@ export default class GroceryList extends Component {
             {
                 
                 this.props.data.map(item => {
-                    return <GroceryDetail deleteGrocery={this.props.deleteGrocery} key={item.id} item={item}
+                    return <GroceryDetail modifyStock={this.props.modifyStock} deleteGrocery={this.props.deleteGrocery} key={item.id} item={item}
                     />
                 })
                

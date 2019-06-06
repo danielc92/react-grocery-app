@@ -37,6 +37,8 @@ export default class GroceryDetail extends Component {
                 <p className="has-text-grey help">Last updated: {this.props.item.last_updated}</p>
                 <p className="help has-text-link">uuid: {this.props.item.uuid}</p>
                 <button onClick={this.props.deleteGrocery.bind(this, this.props.item.uuid)} className="button is-outlined is-danger is-small">Delete</button>
+                <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, -1)} className="button is-outlined is-warning is-small">Decrement Stock</button>
+                <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, 1)} className="button is-outlined is-success is-small">Increment Stock</button>
             </div>
         </div>
     </article>
