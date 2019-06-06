@@ -24,7 +24,7 @@ export default class App extends Component {
     },
     {
         "name": "Tangerines",
-        "category": "",
+        "category": "Fruit",
         "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
         "image_name": "tangerines-1721590_640.jpg",
         "image_source": "Pixabay",
