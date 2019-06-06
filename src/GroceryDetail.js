@@ -34,7 +34,7 @@ export default class GroceryDetail extends Component {
                 <p className="tag is-small is-warning">{this.props.item.brand_name}</p>
                 <p style={this.checkStyle(this.props.item.nf_ingredient_statement)}>{this.checkItemExists(this.props.item.nf_ingredient_statement, 'Ingredients')}</p>
                 <p className="has-text-grey help">Last updated: {this.props.item.updated_at}</p>
-                <button onClick={this.props.deleteGrocery.bind(this, this.props.item.id)} className="button is-outlined is-danger is-small">Delete</button>
+                <button onClick={this.props.deleteGrocery.bind(this, this.props.item.uuid)} className="button is-outlined is-danger is-small">Delete</button>
             </div>
         </div>
     </article>
