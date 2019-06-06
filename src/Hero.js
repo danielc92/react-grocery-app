@@ -9,7 +9,7 @@ export default class Hero extends Component {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <a href="#" className="navbar-item">
+          <a href="http://localhost:3000" className="navbar-item">
             <strong>GROCERY APP</strong>
           </a>
           <span className="navbar-burger burger" data-target="navbarMenuHeroB">
@@ -20,17 +20,17 @@ export default class Hero extends Component {
         </div>
         <div id="navbarMenuHeroB" className="navbar-menu">
           <div className="navbar-end">
-            <a className="navbar-item is-active">
+            <a href="http://localhost:3000" className="navbar-item is-active">
               Home
             </a>
-            <a href="#" className="navbar-item">
+            <a href="http://localhost:3000" className="navbar-item">
               About
             </a>
-            <a href="#" className="navbar-item">
+            <a href="http://localhost:3000" className="navbar-item">
               Contact
             </a>
             <span className="navbar-item">
-              <a href="#" className="button is-info is-inverted">
+              <a href="http://localhost:3000" className="button is-info is-inverted">
                 <span className="icon">
                   <i className="fab fa-github"></i>
                 </span>

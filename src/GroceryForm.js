@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import GroceryDetail from './GroceryDetail';
 
 export default class GroceryForm extends Component {
 
@@ -8,7 +7,6 @@ export default class GroceryForm extends Component {
         fontSize:'0.90rem',
         color: '#4c4c4c'
     }
-
 
     render() {
         return (
