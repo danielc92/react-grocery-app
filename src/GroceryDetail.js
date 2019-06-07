@@ -16,6 +16,10 @@ export default class GroceryDetail extends Component {
         }
     }
 
+    checkStock = (stock) => {
+        return (stock > 0) ? <p>stock {stock}</p>: <p>no stock</p> 
+    }
+
     render() {
         return (
 <React.Fragment>
@@ -26,7 +30,7 @@ export default class GroceryDetail extends Component {
                 <h5 className="title">{this.props.item.name}</h5>
                 <p className="tags">
                 <span className="tag is-small is-warning">{this.props.item.category}</span>    
-                <span className="tag is-small is-success">Stock:&nbsp;   <strong> {this.props.item.stock}</strong></span>    
+                <span className={"tag is-small " + (this.props.item.stock > 0 ? 'is-success' : 'is-danger')}><strong>{this.props.item.stock > 0 ? 'Stock: ' + this.props.item.stock : 'out of stock'}</strong></span>    
                 </p>
                 <p className="help">{this.props.item.description}</p>
                 <p><code style={{ backgroundColor:'transparent', fontSize: '0.8rem', color: '#4873b0' }}>{this.props.item.last_updated}</code></p>

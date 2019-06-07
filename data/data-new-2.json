@@ -15,7 +15,7 @@
         "image_name": "apricots-2523272_640.jpg",
         "image_source": "Pixabay",
         "uuid": "7f032d2f-c6d6-4513-adb1-b708b8fb3d7c",
-        "stock": 87,
+        "stock": 0,
         "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
         "last_updated": "2019-06-06T04:46:16.540Z"
     },
@@ -275,13 +275,13 @@
     },
     {
         "name": "Tangerines",
-        "category": "",
+        "category": "Fruit",
         "description": "Dolore consectetur nostrud fugiat tempor veniam do ut et. Fugiat adipisicing duis laboris irure veniam sint minim dolor excepteur quis et commodo Lorem. Consequat laboris cillum in velit sint. Minim dolor duis anim fugiat dolor voluptate excepteur pariatur.",
         "image_name": "tangerines-1721590_640.jpg",
         "image_source": "Pixabay",
         "weight_grams": 1000,
         "uuid": "e1f0883f-3d93-49de-89e5-8c934b6bea61",
-        "stock": 167,
+        "stock": 0,
         "last_updated": "2019-06-06T04:46:16.540Z"
     },
     {
@@ -302,7 +302,7 @@
         "image_source": "Pixabay",
         "weight_grams": 1000,
         "uuid": "5a66ba01-ba0a-4081-8f20-b549ffd0476e",
-        "stock": 150,
+        "stock": 0,
         "last_updated": "2019-06-06T04:46:16.540Z"
     },
     {
