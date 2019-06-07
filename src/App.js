@@ -372,6 +372,7 @@ export default class App extends Component {
       description:  e.target.description.value,
       last_updated: timestamp,
       name: e.target.name.value,
+      image_name: '640x480.png',
       category: e.target.category.value,
       stock: 0
 

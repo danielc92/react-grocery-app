@@ -9,7 +9,7 @@ export default class GroceryList extends Component {
             <section className="container">
 
             <div className="content">
-                <h3>Grocery List</h3>
+                <h3>Products</h3>
             </div>
             <div className="columns is-multiline">
             {

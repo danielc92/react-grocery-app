@@ -14,7 +14,7 @@ export default class GroceryForm extends Component {
                 <section className="section">
                 <section className="container">
                 <div className="content">
-                <h3>Grocery Form</h3>
+                <h3>Add a new grocery</h3>
                 </div>
                 <section className="column is-three-fifths">
                 <form className="form" onSubmit={this.props.addGrocery}>
