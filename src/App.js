@@ -29,7 +29,7 @@ export default class App extends Component {
                 grocery.rated_positive = grocery.rated_positive + 1;
                 
             } else if (rating_dir === -1){
-                grocery.rated_positive = grocery.rated_positive - 1;
+                grocery.rated_negative = grocery.rated_negative + 1;
             }
 
             // Set modified timestamp after updating ratings
