@@ -18,6 +18,29 @@ export default class App extends Component {
   }
 
 
+  modifyRating = (uuid, rating_dir) => {
+    this.setState({groceries: this.state.groceries.map(grocery => {
+        // Check UUID matches throughout map
+        if (uuid === grocery.uuid) {
+
+            // Increment or decrement based on flag 
+            if (rating_dir === 1) {
+                grocery.rated_positive = grocery.rated_positive + 1;
+                
+            } else if (rating_dir === -1){
+                grocery.rated_positive = grocery.rated_positive - 1;
+            }
+
+            // Set modified timestamp after updating ratings
+            let timestamp = new Date().toGMTString();
+            grocery.last_updated = timestamp;
+        }
+        return grocery;
+        })
+    });
+  }
+
+
   modifyStock = (uuid, increment) => {
     this.setState({groceries: this.state.groceries.map(grocery => {
         // Check if no more stock is available, if not add or decrease stock level
@@ -36,9 +59,6 @@ export default class App extends Component {
                 alert('No more stock available, you cannot purchase this item');
             }
         }
-
-        
-
         return grocery;
         })
     });
