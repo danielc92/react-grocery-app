@@ -33,13 +33,17 @@ export default class GroceryDetail extends Component {
                 <span className={"tag is-small " + (this.props.item.stock > 0 ? 'is-success' : 'is-danger')}><strong>{this.props.item.stock > 0 ? 'Stock: ' + this.props.item.stock : 'out of stock'}</strong></span>    
                 </p>
                 <p className="help">{this.props.item.description}</p>
-                <p><code style={{ backgroundColor:'transparent', fontSize: '0.8rem', color: '#4873b0' }}>{this.props.item.last_updated}</code></p>
-                <p><code style={{ backgroundColor:'transparent', fontSize: '0.8rem', color: '#4873b0' }}>{this.props.item.uuid}</code></p>
+                
+                
                 <p className="buttons">
-                    <button onClick={this.props.deleteGrocery.bind(this, this.props.item.uuid)} className="button is-outlined is-danger is-small">Delete Grocery</button>
-                    <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, -1)} className="button is-outlined is-success is-small">Purchase One Unit</button>
-                    <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, 1)} className="button is-outlined is-success is-small">Restock One Unit</button>
+                    <button onClick={this.props.deleteGrocery.bind(this, this.props.item.uuid)} className="button is-outlined is-danger is-small">Delete</button>
+                    <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, -1)} className="button is-outlined is-success is-small">Purchase One</button>
+                    <button onClick={this.props.modifyStock.bind(this, this.props.item.uuid, 1)} className="button is-outlined is-success is-small">Restock One</button>
                 </p>
+
+                <p className="has-text-grey help">Last updated: <strong>{this.props.item.last_updated}</strong></p>
+                <p className="has-text-grey help">UUID: <strong>{this.props.item.uuid}</strong></p>
+                
             </div>
         </div>
     </article>
