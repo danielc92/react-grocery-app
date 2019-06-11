@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "904110b2fab18ae92da55e1f070d7a39",
+    "revision": "3f92e47dee13a0dacd523a7be2ca59cd",
     "url": "/react-grocery-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-grocery-app/static/js/2.26e4a0dc.chunk.js"
   },
   {
-    "revision": "4cf12f0dc74ef89993f6",
-    "url": "/react-grocery-app/static/js/main.6e91721b.chunk.js"
+    "revision": "ce3ff66b705792447802",
+    "url": "/react-grocery-app/static/js/main.e1a53f25.chunk.js"
   },
   {
     "revision": "4be5c72496709f6e6266",
