@@ -43,6 +43,17 @@ export default class GroceryDetail extends Component {
                 <p className="has-text-grey help">Last updated: <strong>{this.props.item.last_updated}</strong></p>
                 <p className="has-text-grey help">UUID: <strong>{this.props.item.uuid}</strong></p>
                 
+                <p className="buttons">
+                    <a onClick={this.props.modifyRating.bind(this, this.props.item.uuid, 1)} className="button is-success is-small">
+                        <span class="icon"><i class="far fa-thumbs-up"></i></span>
+                        <span>{this.props.item.rated_positive}</span>
+                    </a>
+                    <a onClick={this.props.modifyRating.bind(this, this.props.item.uuid, -1)} className="button is-danger is-small">
+                        <span class="icon"><i class="far fa-thumbs-down"></i></span>
+                        <span>{this.props.item.rated_negative}</span>
+                    </a>
+                </p>
+                
             </div>
         </div>
     </article>
