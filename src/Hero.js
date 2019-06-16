@@ -5,7 +5,7 @@ export default class Hero extends Component {
     render() {
         return (
             <React.Fragment>
-                    <section className="hero is-info is-medium">
+                    <section className="hero is-link is-bold is-medium">
   <div className="hero-head">
     <nav className="navbar">
       <div className="container">
@@ -21,6 +21,7 @@ export default class Hero extends Component {
           <div className="navbar-end">
             <Link to="/" className="navbar-item">Home</Link>
             <Link to="/about" className="navbar-item">About</Link>
+            <Link to="/new-grocery" className="navbar-item">Add Groceries</Link>
             <span className="navbar-item">
               <a href="https://github.com/danielc92/react-grocery-app" className="button is-info is-inverted">
                 <span className="icon">

@@ -94,12 +94,15 @@ export default class App extends Component {
         <React.Fragment>
           {/* Hero */}
           <Hero/>
-
-          <Route exact path="/" render={props => (
+          <Route exact path="/new-grocery" render={props => (
             <React.Fragment>
-              {/* Grocery Form */}
+                {/* Grocery Form */}
               <GroceryForm addGrocery={this.addGrocery} />
 
+            </React.Fragment>
+          )}/>
+          <Route exact path="/" render={props => (
+            <React.Fragment>
               {/* Grocery List */}
               <GroceryList modifyRating={this.modifyRating} modifyStock={this.modifyStock} deleteGrocery={this.deleteGrocery} data={this.state.groceries}/>
               </React.Fragment>
