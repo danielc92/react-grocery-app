@@ -28,10 +28,12 @@ export default class GroceryDetail extends Component {
         style={{boxShadow:'0 1px 4px 0 rgba(0,0,0,.14)', borderRadius:0}}>
             <div className="content">
                 <img src={'./images/' + this.props.item.image_name}></img>
-                <h5 className="title">{this.props.item.name}</h5>
+                <h5 style={{margin: '1rem 0rem'}} className="title">{this.props.item.name}</h5>
                 <p className="tags">
-                <span className="tag is-small is-warning">{this.props.item.category}</span>    
-                <span className={"tag is-small " + (this.props.item.stock > 0 ? 'is-success' : 'is-danger')}><strong>{this.props.item.stock > 0 ? 'Stock: ' + this.props.item.stock : 'out of stock'}</strong></span>    
+                <span className="tag is-small is-light">{this.props.item.category}</span>    
+                <span className={"tag is-small " + (this.props.item.stock > 0 
+                ? 'is-success' 
+                : 'is-danger')}>{this.props.item.stock > 0 ? 'Stock: ' + this.props.item.stock : 'out of stock'}</span>    
                 </p>
                 <p className="help">{this.props.item.description}</p>
                 
